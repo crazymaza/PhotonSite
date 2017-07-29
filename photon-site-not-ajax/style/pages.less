@@ -1,0 +1,65 @@
+// Импортируем стили из другово файла
+@import url(_mix.less);
+@import url(menu.less);
+
+
+
+body, html {
+	.body;
+	height: 100%;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+.block.block1 {
+	// justify-content: space-between;
+	h1 {
+		font-size: @h1;
+		font-family:'Roboto', cursive;
+		color: black;
+		margin-bottom: 0;
+		text-shadow: 5px 6px 2px #A7A3A3;
+	}
+	.one, .two {
+		font-family: 'Roboto', sans-serif;
+		text-transform: uppercase;
+		font-size: 1em;
+		margin-top: 5em;
+		color: black;
+		text-shadow: 0px 0px 3px #DA1414;
+	}
+	.one {
+		margin-left: 18em;
+		
+	} 
+}
+
+h2 {font-size: @h2 / 1.5; text-align: center;}
+
+li,p {font-size: @p * 1.5;}
+
+a {text-decoration: none;}
+
+h2, p, a {font-family: 'Roboto', sans-serif;}
+
+blockquote {font-size: @p * 1.2; font-style: italic;}
+
+// кнопки
+.btn {
+	.btn-attribute;
+}
+
+ main {
+	display: table;
+    height: 70%;
+    
+}
+
+.white-popup {
+	display: table-row;
+  	height: 70%;
+}
+
+@import url(footer.less);
+@import url(media.less);

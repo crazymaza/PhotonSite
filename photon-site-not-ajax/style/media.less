@@ -1,0 +1,85 @@
+@import url(_mix.less);
+@media screen and (max-width: 1126px) {
+	.block-down>img {display: none;}
+	
+	nav {
+		height: @menu-height*2;
+		display: flex;
+		flex-wrap: wrap;
+		text-align: justify;
+		.nav-button {
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			a {
+				height: 3.625em;
+				padding: 1em 1em;
+				
+			}
+		}
+	}
+	.block.block1 {
+		div {
+		h1 {
+			span {
+				margin-left: 0;	
+			}
+		}
+		.one {
+			margin-left: 5em;
+			
+			}
+		}
+	}
+
+	.go-top {
+		display: none;
+	}
+	.block-down {
+		height: 20em;
+	}
+
+}
+@media screen and (max-width: 930px) {
+	.block>img {display: none;}
+	nav {
+		height: @menu-height*2.4;
+		display: flex;
+		flex-wrap: wrap;
+		// text-align: justify;
+		justify-content: flex-start;
+		.nav-button {
+			width: 90%;
+			margin: 1em;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			flex-direction: row;
+			a {
+				width: 100%;
+				height: 2em;
+				padding: .5em 1em;
+			}
+		}
+	}
+	.block.block1 {
+		div {
+			h1 {font-size: @h1 / 1.5;}
+		}
+	}
+	h2 {font-size: @h2 / 1.5;}
+	.block {margin-top: 0;}
+	.block.block-down {height: 22.5em; margin-top: 1em; }
+	.block-down input {width: 90%;}
+	.submit {margin-top: .5em;}
+	.white-popup {
+	    padding: .5em;
+	    width: 95%;
+	    margin: 0;
+	}
+	.block.block1 .one {margin-left: 0em;}
+	
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   img {height: 30em;}
+}

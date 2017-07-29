@@ -1,0 +1,270 @@
+// Импортируем стили из другово файла
+@import url(_mix.less);
+
+// импортируем стили для всего сайта
+body, html {
+	.body;
+
+	
+}
+// импортируем стили для блоков
+.block {
+	.block;
+}
+
+// адаптивность картинок
+img {
+	width: 100%;
+	height: auto;
+}
+// стили только для первого блока
+.block.block1 {
+	background-color: @img-bg;
+	// justify-content: space-between;
+	div {
+		h1 {
+			font-size: @h1;
+			font-family:'Audiowide', cursive;
+			color: black;
+			margin-bottom: 0;
+			span {
+				margin-left: 3.3em;	
+			}
+		}
+		.one, .two {
+			font-family: 'Roboto', sans-serif;
+			text-transform: uppercase;
+			font-size: 1em;
+			margin-top: 5em;
+			color: black;
+		}
+		.one {
+			margin-left: 20em;
+			
+		}
+		p {
+			margin-top: 2em;
+			/* margin-left: 5em; */
+		}
+	} 
+}
+
+
+h2 {font-size: @h2;}
+
+p {font-size: @p;}
+
+a {text-decoration: none;}
+
+h2, p, a {font-family: 'Roboto', sans-serif;}
+
+// меню навигации
+nav {
+	background-color: @menu-bg;
+	height: @menu-height;
+	text-align: center;
+	margin-top: 1.875em;
+
+	.nav-button{
+		 // margin-left:@max-width/4.5; 
+		width: 51em;
+		height: @menu-height;
+		margin: auto;
+		display: flex;
+
+		
+		a{
+			height: @menu-height;
+			text-align: center;
+			color: @img-bg;
+			// float: left;
+			font-size: 1em;
+			padding: 2em .5em;
+			box-sizing: border-box;
+			font-weight: bold;
+			text-transform: uppercase;
+
+			&:hover {
+				background-color:tomato;
+				color: contrast(aqua,orange);
+			}
+		}
+			
+		.active {
+			background-color: @btn-color;
+		}
+	}
+}
+
+.block5 {margin-top: 0;}
+.block6 {margin-top: 5em;}
+
+// сдвигаем часть блока с текстом
+.text {
+	padding-top: 5em;
+}
+
+// Окно Magnific Popup
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 1.5em;
+    width: auto;
+    max-width: 750px;
+    margin: 1.5em auto;
+}
+// кнопки
+.btn {
+	.btn-attribute;
+}
+
+// блок обратного звонка
+.block-down {
+	height: 16.094em;
+	background-color: @menu-bg;
+	text-align: center;
+	color: white;
+	margin: 2em 0;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	img {
+		height: 13em;
+		width: 13em;
+		transform: rotate(33deg);
+		margin-top: 1em;
+		margin-left: 5em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	p {
+		text-transform: none;
+	}
+	input {
+		height: 2.7em;
+		width: 25em;
+		text-align: center;
+		margin-right: 1em;
+		
+	
+	}
+	.submit {
+		display: inline-block;
+	}
+	.down-text {
+		margin: auto;
+	}
+}
+
+// подвал
+footer {
+	background-color: @menu-bg;
+	height: 3em;
+	vertical-align: center;
+	div {
+		padding-top: 1em;
+		padding-left: 3em;
+	}
+}
+
+// кнопка "наверх"
+.go-top {
+	bottom: 1.5em;
+	right: 3%;
+	/* width: 3.125em;
+	height: 3.125em; */
+	text-align: center;
+	line-height: 3.125em;
+	position: fixed;	
+	font-size: 2em;
+	i {
+		font-size: 1.5em;
+		color: gray;
+	}
+}
+
+
+// Медиа
+@media screen and (max-width: 1126px) {
+	.block-down>img {display: none;}
+	
+	nav {
+		height: @menu-height*2;
+		display: flex;
+		flex-wrap: wrap;
+		text-align: justify;
+		.nav-button {
+			width: 100%;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			a {
+				height: 3.625em;
+				padding: 1em 1em;
+				
+			}
+		}
+	}
+	.block.block1 {
+		div {
+		h1 {
+			span {
+				margin-left: 0;	
+			}
+		}
+		.one {
+			margin-left: 5em;
+			
+			}
+		}
+	}
+
+	.go-top {
+		display: none;
+	}
+	.block-down {
+		height: 20em;
+	}
+
+}
+@media screen and (max-width: 930px) {
+	.block>img {display: none;}
+	nav {
+		height: @menu-height*2.4;
+		display: flex;
+		flex-wrap: wrap;
+		// text-align: justify;
+		justify-content: flex-start;
+		.nav-button {
+			width: 90%;
+			margin: 1em;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			flex-direction: row;
+			a {
+				width: 100%;
+				height: 2em;
+				padding: .5em 1em;
+			}
+		}
+	}
+	.block.block1 {
+		div {
+			h1 {font-size: @h1 / 1.5;}
+		}
+	}
+	h2 {font-size: @h2 / 1.5;}
+	.block {margin-top: 0;}
+	.block.block-down {height: 22.5em; margin-top: 1em; }
+	.block-down input {width: 90%;}
+	.submit {margin-top: .5em;}
+	.white-popup {
+	    padding: .5em;
+	    width: 95%;
+	    margin: 0;
+	}
+	
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   img {height: 30em;}
+}

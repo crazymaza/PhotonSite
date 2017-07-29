@@ -1,0 +1,75 @@
+@import url(_mix.less);
+/*nav {
+	background-color: @menu-bg;
+	height: @menu-height;
+	text-align: center;
+	margin-top: 1.875em;
+	display: flex;
+	justify-content: center;
+
+	.nav-button{ 
+		width: auto;
+		height: @menu-height;
+		margin: auto;
+		display: flex;
+
+		
+		a{
+			text-align: center;
+			color: @img-bg;
+			font-size: 1em;
+			padding: 2em .5em;
+			box-sizing: border-box;
+			font-weight: bold;
+			text-transform: uppercase;
+
+			&:hover {
+				background-color:tomato;
+				color: contrast(aqua,orange);
+			}
+		}
+			
+		.active {
+			background-color: @btn-color;
+		}
+	}
+} */
+
+nav {
+	background-color: @menu-bg;
+	height: @menu-height;
+	text-align: center;
+	margin-top: 1.875em;
+	text-align: center;
+
+	.nav-button{
+		 // margin-left:@max-width/4.5; 
+		width: 51em;
+		height: @menu-height;
+		margin-top: 3%;
+		display: inline-block;
+	
+
+		
+		a{
+			height: @menu-height;
+			text-align: center;
+			color: @img-bg;
+			// float: left;
+			font-size: 1em;
+			padding: 2em .5em;
+			box-sizing: border-box;
+			font-weight: bold;
+			text-transform: uppercase;
+
+			&:hover {
+				background-color:tomato;
+				color: contrast(aqua,orange);
+			}
+		}
+			
+		.active {
+			background-color: @btn-color;
+		}
+	}
+}

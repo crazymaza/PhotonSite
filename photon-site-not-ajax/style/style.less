@@ -1,0 +1,132 @@
+// Импортируем стили из другово файла
+@import url(_mix.less);
+
+// импортируем стили для всего сайта
+body, html {
+	.body;
+
+	
+}
+// импортируем стили для блоков
+.block {
+	.block;
+}
+
+// адаптивность картинок
+img {
+	width: 100%;
+	height: auto;
+}
+// стили только для первого блока
+.block.block1 {
+	background-color: @img-bg;
+	// justify-content: space-between;
+	div {
+		h1 {
+			font-size: @h1;
+			font-family:'Audiowide', cursive;
+			color: black;
+			margin-bottom: 0;
+			text-shadow: 5px 6px 2px #A7A3A3;
+			span {
+				margin-left: 3.3em;	
+			}
+		}
+		.one, .two {
+			font-family: 'Roboto', sans-serif;
+			text-transform: uppercase;
+			font-size: 1em;
+			margin-top: 5em;
+			color: black;
+			text-shadow: 0px 0px 3px #DA1414;
+		}
+		.one {
+			margin-left: 20em;
+			
+		}
+		p {
+			margin-top: 2em;
+			/* margin-left: 5em; */
+		}
+	} 
+}
+
+
+h2 {font-size: @h2;}
+
+p {font-size: @p;}
+
+a {text-decoration: none;}
+
+h2, p, a {font-family: 'Roboto', sans-serif;}
+
+// меню навигации
+@import url(menu.less);
+
+.block5 {margin-top: 0;}
+.block6 {margin-top: 5em;}
+
+// сдвигаем часть блока с текстом
+.text {
+	padding-top: 5em;
+}
+
+// Окно Magnific Popup
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 1.5em;
+    width: auto;
+    max-width: 750px;
+    margin: 1.5em auto;
+}
+// кнопки
+.btn {
+	.btn-attribute;
+}
+
+// блок обратного звонка
+.block-down {
+	height: 16.094em;
+	background-color: @menu-bg;
+	text-align: center;
+	color: white;
+	margin: 2em 0;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	img {
+		height: 13em;
+		width: 13em;
+		transform: rotate(33deg);
+		margin-top: 1em;
+		margin-left: 5em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	p {
+		text-transform: none;
+	}
+	input {
+		height: 2.7em;
+		width: 25em;
+		text-align: center;
+		margin-right: 1em;
+		
+	
+	}
+	.submit {
+		display: inline-block;
+	}
+	.down-text {
+		margin: auto;
+	}
+}
+
+// подвал & кнопка "наверх"
+@import url(footer.less);
+
+
+// Медиа
+@import url(media.less);

@@ -1,0 +1,65 @@
+//font-family: 'Audiowide', cursive;
+@import url('https://fonts.googleapis.com/css?family=Audiowide'); 
+
+//font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+//Создание переменных
+@btn-color: #ff3f40; //красный
+@img-bg: #f6f2f1;   //бежевый
+@menu-bg: #312f30;  //черный
+@max-width: 73.125em; //максимальная ширина макета 
+@min-width: 29.375em; //минимальная ширина макета
+@menu-height: 5.625em;  /*2.813em*/ //Высота меню 
+@h1: 3.750em; //Высота шрифта h1
+@h2: 2.625em; //Высота шрифта h2
+@p: 1em; //Высота шрифта р
+
+//Общие стили
+.body() {
+	margin: 0 auto;
+	padding: 0;
+	max-width: @max-width;
+	color: #585858;
+	// min-width: @min-width;
+
+}
+
+//Создаем стили для блоков
+.block() {
+	max-width: @max-width;
+	max-height: 100vh;
+	display: flex;
+	text-transform: uppercase;
+}
+
+//Делаем кнопку 
+.btn-attribute (@width: 10.125em;
+		@height: 2.625em;
+		@border-radius: 5%;	
+		@text-align: center;
+		@box-sizing: border-box;
+		@display: block;
+		@padding-top: 0.7em;	
+		@font-size: 1.125em;
+		@color:white;
+		@background-color:#ff3f40;) {
+			width: @width;
+			height: @height;
+			border-radius: @border-radius;	
+			text-align: @text-align;
+			box-sizing: @box-sizing;
+			display: @display;
+			padding-top: @padding-top;	
+			font-size: @font-size;
+			color: @color;
+			background-color: @background-color;
+}
+
+// Отступы между блоков
+.block-margin(
+	@margin-top: 6.25em;
+	@margin-bottom: 6.25em;) {
+		margin-top: @margin-top;
+		margin-bottom: @margin-bottom;
+}

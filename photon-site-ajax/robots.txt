@@ -1,0 +1,6 @@
+Sitemap: http://photonsecurity.ru/sitemap.xml
+
+# global
+User-agent: *
+Host: http://photonsecurity.ru
+
